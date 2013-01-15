@@ -14,7 +14,7 @@ module CanonicalRails
     end
     
     def canonical_href
-      "#{request.protocol}#{canonical_host}#{request.path}#{trailing_slash_if_needed}#{whitelisted_query_string}"
+      "https://#{canonical_host}#{request.path}#{trailing_slash_if_needed}#{whitelisted_query_string}"
     end
     
     def canonical_tag
